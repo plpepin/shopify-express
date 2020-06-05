@@ -10,7 +10,6 @@
   "author": "WOWD LLC",
   "license": "ISC",
   "dependencies": {
-    "babel-node": "0.0.1-security",
     "express": "^4.16.2",
     "nodemon": "^2.0.4",
     "serve-favicon": "^2.5.0"
