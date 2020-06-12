@@ -1,21 +1,23 @@
 {
-  "name": "express-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "debug": "DEBUG=express:* nodemon ./index.js --exec babel-node -e js"
-  },
-  "author": "WOWD LLC",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.2",
-    "nodemon": "^2.0.4",
-    "serve-favicon": "^2.5.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1"
-  }
+    "name": "express-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon ./index.js --exec babel-node -e js",
+        "debug": "DEBUG=express:* nodemon ./index.js --exec babel-node -e js"
+    },
+    "author": "WOWD LLC",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.2",
+        "express-shopify-auth": "0.0.5",
+        "nodemon": "^2.0.4",
+        "serve-favicon": "^2.5.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-stage-0": "^6.24.1"
+    }
 }
