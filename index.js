@@ -4,7 +4,7 @@ import path from 'path';
 import data from './data/data.json';
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // This is for making public folder reachable on root /
 app.use(express.static("public"));
