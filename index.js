@@ -20,11 +20,14 @@ app.get('/', (req, res) =>
 
 // Lets you add a parameter of type "/param" or "dynamic" parameters
 app.get('/item/:id', (req, res) => {
-    console.log(req.params.id);
+
     let user = Number(req.params.id);
-    console.log(user);
-    console.log(data[user]);
-    res.json(data[user]);
+    // Normalize the first item request (id:0 or 1)
+    if (user <= 1)
+        user = 1;
+    console.log(item);
+    console.log(data[user - 1]);
+    res.json(data[user - 1]]);
 })
 
 app.post('/post', (req, res) =>
