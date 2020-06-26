@@ -25,9 +25,9 @@ app.get('/item/:id', (req, res) => {
     // Normalize the first item request (id:0 or 1)
     if (user <= 1)
         user = 1;
-    console.log(item);
+    console.log(user);
     console.log(data[user - 1]);
-    res.json(data[user - 1]]);
+    res.json(data[user - 1]);
 })
 
 app.post('/post', (req, res) =>
